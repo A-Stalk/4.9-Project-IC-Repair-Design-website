@@ -124,7 +124,7 @@ body {
 /* СЕКЦИЯ 1 */
 
 .section1 {
-  background: url("/images/s1_background.jpg"), rgba(0, 0, 0, 0.7);
+  background: url("./images/s1_background.jpg"), rgba(0, 0, 0, 0.7);
   background-blend-mode: multiply;
   background-size: cover;
   height: 707px;
@@ -558,7 +558,7 @@ label {
 .section5 {
   margin-top: 25%;
   background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-    url("/images/s5_background.jpg");
+    url("./images/s5_background.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;

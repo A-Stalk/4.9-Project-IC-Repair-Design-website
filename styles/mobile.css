@@ -48,7 +48,7 @@
 
   .section1 {
     height: 30em;
-    background: url("/images/s1_background_mob.jpg"), rgba(0, 0, 0, 0.7);
+    background: url("./images/s1_background_mob.jpg"), rgba(0, 0, 0, 0.7);
     background-size: cover;
     background-repeat: no-repeat;
     justify-content: center;
