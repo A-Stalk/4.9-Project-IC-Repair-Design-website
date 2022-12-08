@@ -815,7 +815,7 @@ label {
   align-items: center;
 }
 .s7_buttons {
-  width: 10%;
+  /* width: 10%; */
   gap: 1em;
   display: flex;
   flex-direction: row;
