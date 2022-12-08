@@ -2,6 +2,8 @@
   body {
     /* width: 100%; */
     max-width: 1299px;
+    margin: 0 auto;
+    padding: 0;
   }
   header {
     display: flex;
