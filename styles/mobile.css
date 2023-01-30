@@ -1,7 +1,4 @@
 @media (max-width: 768px) {
-  body {
-    margin: 0px auto;
-  }
   header {
     display: flex;
     justify-content: center;
@@ -83,9 +80,6 @@
 
   /* СЕКЦИЯ 2 */
 
-  .section2 {
-    /* height: 65em; */
-  }
   .s2_main_box {
     width: 91%;
     flex-direction: column;
