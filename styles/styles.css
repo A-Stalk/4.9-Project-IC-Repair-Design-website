@@ -1,11 +1,20 @@
 /* ОБЩИЕ СТИЛИ */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
 body {
-  width: 100%;
-  max-width: 1440px;
-  margin: 0 auto;
+  margin: 0px auto;
+}
+._main_box {
+  max-width: 1300px;
+  margin: 0px auto;
+  padding-left: 5%;
+  padding-right: 5%;
 }
 .title {
-  font-family: "Yeseva One";
+  font-family: 'Yeseva One';
   font-style: normal;
   font-weight: 400;
   font-size: 27px;
@@ -15,7 +24,7 @@ body {
   color: #e3b873;
 }
 .subtitle {
-  font-family: "Yeseva One";
+  font-family: 'Yeseva One';
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
@@ -50,7 +59,7 @@ body {
   flex-direction: column;
 }
 .input {
-  font-family: "Nunito Sans";
+  font-family: 'Nunito Sans';
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -70,12 +79,13 @@ body {
 /* HEADER & FOOTER*/
 
 .header {
+  /* min-width: 768px; */
   background-color: #131313;
   background-size: 100% auto;
-  font-family: "Nunito Sans", Arial, Helvetica, sans-serif;
+  font-family: 'Nunito Sans', Arial, Helvetica, sans-serif;
 }
 .header-content {
-  margin: 0px 90px;
+  /* margin: 0px 5vw; */
   height: 83px;
   display: flex;
   justify-content: space-between;
@@ -93,6 +103,7 @@ body {
 .header_nav {
   list-style: none;
   display: flex;
+  flex-wrap: wrap;
 }
 
 .header_nav a {
@@ -103,7 +114,7 @@ body {
   color: #e3b873;
 }
 .header_nav_item {
-  margin-right: 47.09px;
+  margin-right: 3vw;
   font-style: normal;
   font-weight: 400;
   font-size: 11px;
@@ -111,7 +122,7 @@ body {
 }
 .header .phone {
   color: #e3b873;
-  margin: 20px;
+  /* margin: 2vw; */
   font-style: normal;
   font-weight: 400;
   font-size: 11px;
@@ -124,22 +135,25 @@ body {
 /* СЕКЦИЯ 1 */
 
 .section1 {
-  background: url("/images/s1_background.jpg"), rgba(0, 0, 0, 0.7);
+  background: url('../images/s1_background.jpg'), rgba(0, 0, 0, 0.7);
   background-blend-mode: multiply;
   background-size: cover;
   height: 707px;
   display: flex;
 }
 .s1_main_box {
-  margin-left: 8%;
-  width: 40%;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  /* flex-wrap: wrap; */
+  align-self: center;
+  justify-self: flex-start;
 }
+
+.s1_box {
+  width: 40%;
+}
+
 .s1_main_box h1 {
-  font-family: "Yeseva One", Arial, Helvetica, sans-serif;
+  font-family: 'Yeseva One', Arial, Helvetica, sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 40px;
@@ -151,17 +165,17 @@ body {
   color: #e3b873;
 }
 .s1_main_box p {
-  font-family: "Nunito Sans", Arial, Helvetica, sans-serif;
+  font-family: 'Nunito Sans', Arial, Helvetica, sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 22px;
   line-height: 36px;
   color: #ffffff;
-  width: 85%;
+  /* width: 85%; */
 }
 .s1_main_box .button {
   font-style: normal;
-  width: 40%;
+  /* width: 40%; */
 }
 .s1_buttons {
   display: flex;
@@ -177,14 +191,14 @@ body {
 /* СЕКЦИЯ 2 */
 
 .section2 {
+  /* min-width: 700px; */
   background-color: #131313;
   height: 1074px;
   display: flex;
   justify-content: center;
 }
 .s2_main_box {
-  width: 85%;
-  margin-top: 7%;
+  margin-top: 5vw;
   display: flex;
   flex-direction: row;
 }
@@ -195,17 +209,17 @@ body {
   list-style: none;
   display: inline;
   padding-inline-start: 0;
-  margin-bottom: 6%;
+  margin-bottom: 2vw;
 }
 .s2_menu li {
   display: inline;
-  font-family: "Yeseva One";
+  font-family: 'Yeseva One';
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
   line-height: 19px;
   text-transform: uppercase;
-  margin-right: 3.5em;
+  margin-right: 2vw;
 }
 .s2_menu li a {
   text-decoration: none;
@@ -217,7 +231,7 @@ body {
 }
 
 .s2_left p {
-  font-family: "Nunito Sans";
+  font-family: 'Nunito Sans';
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -255,7 +269,7 @@ body {
 }
 
 .s2_grid_box h3 {
-  font-family: "Yeseva One";
+  font-family: 'Yeseva One';
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
@@ -264,7 +278,7 @@ body {
   color: #e3b873;
 }
 .s2_grid_box .s2_desc {
-  font-family: "Nunito Sans";
+  font-family: 'Nunito Sans';
   font-style: normal;
   font-weight: 400;
   font-size: 13px;
@@ -283,6 +297,7 @@ body {
 /* СЕКЦИЯ 3 */
 
 .section3 {
+  /* min-width: 700px; */
   display: flex;
   justify-content: center;
   background-color: #ffffff;
@@ -292,13 +307,13 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  width: 51em;
-  margin-top: -20em;
+  width: 70rem;
+  margin-top: -22em;
   z-index: 1;
 }
 
 .s3_main_box h3 {
-  font-family: "Yeseva One";
+  font-family: 'Yeseva One';
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
@@ -324,7 +339,7 @@ body {
 }
 
 .s3_main_box p {
-  font-family: "Nunito Sans";
+  font-family: 'Nunito Sans';
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
@@ -345,7 +360,7 @@ body {
 }
 
 label {
-  font-family: "Nunito Sans";
+  font-family: 'Nunito Sans';
   font-style: normal;
   font-weight: 400;
   font-size: 13px;
@@ -367,7 +382,7 @@ label {
 }
 
 .s3_checkbox label {
-  font-family: "Nunito Sans";
+  font-family: 'Nunito Sans';
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -378,10 +393,16 @@ label {
 /* СЕКЦИЯ 4 */
 
 .section4 {
+  /* min-width: 700px; */
   margin-top: 7%;
   display: flex;
   justify-content: center;
   background-color: #ffffff;
+}
+
+.s4_main_box {
+  padding-left: 0;
+  padding-right: 0;
 }
 
 .s4_box_list {
@@ -410,7 +431,7 @@ label {
   z-index: 1;
 }
 .s4_inside_box .text {
-  font-family: "Yeseva One";
+  font-family: 'Yeseva One';
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
@@ -420,7 +441,7 @@ label {
   padding-top: 10%;
 }
 .s4_inside_box li {
-  font-family: "Nunito Sans";
+  font-family: 'Nunito Sans';
   font-style: normal;
   font-weight: 400;
   font-size: 13px;
@@ -433,7 +454,7 @@ label {
   margin-bottom: -8%;
   align-self: flex-start;
   box-shadow: 5px 5px 10px rgba(227, 184, 115, 0.3);
-  font-family: "Yeseva One";
+  font-family: 'Yeseva One';
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
@@ -449,7 +470,7 @@ label {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  background-image: url("../images/s4_text_box_background.jpg");
+  background-image: url('../images/s4_text_box_background.jpg');
   background-position: left top -88px;
   background-repeat: no-repeat;
 }
@@ -461,7 +482,7 @@ label {
   padding: 0 0 150px 0;
 }
 .s4_text_box .s4_text {
-  font-family: "Nunito Sans";
+  font-family: 'Nunito Sans';
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -492,7 +513,7 @@ label {
 .s4_form p {
   width: 60%;
   align-self: center;
-  font-family: "Nunito Sans";
+  font-family: 'Nunito Sans';
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
@@ -501,7 +522,7 @@ label {
   color: #ffffff;
 }
 .s4_form label {
-  font-family: "Nunito Sans";
+  font-family: 'Nunito Sans';
   font-style: normal;
   font-weight: 400;
   font-size: 13px;
@@ -544,7 +565,7 @@ label {
   width: 76%;
 }
 .s4_pig_text {
-  font-family: "Nunito Sans";
+  font-family: 'Nunito Sans';
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
@@ -556,9 +577,10 @@ label {
 /* СЕКЦИЯ 5 */
 
 .section5 {
-  margin-top: 25%;
+  /* min-width: 700px; */
+  margin-top: 25vw;
   background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-    url("/images/s5_background.jpg");
+    url('../images/s5_background.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
@@ -582,7 +604,7 @@ label {
 .s5_images_middle {
   display: grid;
   justify-content: center;
-  gap: 2em;
+  gap: 2vw;
   margin-top: -2em;
   margin-bottom: -2em;
 }
@@ -590,7 +612,7 @@ label {
 .s5_images_right {
   display: grid;
   justify-content: center;
-  gap: 2em;
+  gap: 2vw;
   margin-top: -7em;
   margin-bottom: 2em;
 }
@@ -599,7 +621,7 @@ label {
 }
 
 .s5_left li {
-  font-family: "Nunito Sans";
+  font-family: 'Nunito Sans';
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
@@ -626,14 +648,15 @@ label {
 /* СЕКЦИЯ 6 */
 
 .section6 {
-  margin-top: 7%;
+  /* min-width: 700px; */
+  margin-top: 8em;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
 }
 
 .s6_main_box {
-  width: 85%;
+  /* width: 85%; */
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -642,7 +665,7 @@ label {
 
 .s6_p {
   width: 21em;
-  font-family: "Nunito Sans";
+  font-family: 'Nunito Sans';
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
@@ -676,7 +699,7 @@ label {
   width: 90%;
 }
 .s6_box_list .name {
-  font-family: "Yeseva One";
+  font-family: 'Yeseva One';
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
@@ -685,7 +708,7 @@ label {
 }
 
 .s6_box_text {
-  font-family: "Nunito Sans";
+  font-family: 'Nunito Sans';
   font-style: normal;
   font-weight: 400;
   font-size: 13px;
@@ -699,14 +722,14 @@ label {
   align-items: center;
   align-self: flex-start;
   gap: 5%;
-  width: 80%;
+  width: 100%;
   height: 5em;
   margin-left: -2rem;
   margin-bottom: -5.5em;
   box-shadow: 5px 5px 20px rgba(227, 184, 115, 0.5);
 }
 .s6_button_text {
-  font-family: "Yeseva One";
+  font-family: 'Yeseva One';
   font-style: normal;
   font-weight: 400;
   font-size: 17px;
@@ -718,7 +741,7 @@ label {
 .s6_background {
   display: flex;
   justify-content: center;
-  margin-top: -30%;
+  margin-top: -20em;
   overflow: hidden;
   z-index: -1;
 }
@@ -726,11 +749,15 @@ label {
 /* СЕКЦИЯ 7 */
 
 .section7 {
+  /* min-width: 700px; */
   background-color: rgba(24, 24, 24, 0.95);
-  background-image: url(/images/s7_background.jpg);
+  background-image: url(../images/s7_background.jpg);
   background-blend-mode: multiply;
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+.s7_main_box {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -739,7 +766,7 @@ label {
   gap: 3em;
 }
 .s7_form {
-  margin-top: -15%;
+  margin-top: -15em;
   width: 55em;
   height: 30em;
   background-color: #181818;
@@ -761,7 +788,7 @@ label {
 }
 
 .s7_form p {
-  font-family: "Yeseva One";
+  font-family: 'Yeseva One';
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
@@ -771,7 +798,7 @@ label {
   color: #ffffff;
 }
 .s7_form label {
-  font-family: "Nunito Sans";
+  font-family: 'Nunito Sans';
   font-style: normal;
   font-weight: 400;
   font-size: 13px;
@@ -824,7 +851,7 @@ label {
   border: 0;
 }
 .s7_middle .s7_text {
-  font-family: "Yeseva One";
+  font-family: 'Yeseva One';
   font-style: normal;
   font-weight: 400;
   font-size: 20px;

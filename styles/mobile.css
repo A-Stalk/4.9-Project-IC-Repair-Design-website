@@ -1,7 +1,6 @@
-@media (max-width: 1299px) {
-  body {
-    /* width: 100%; */
-    max-width: 1299px;
+@media (max-width: 768px) {
+  ._main_box {
+    max-width: 768px;
   }
   header {
     display: flex;
@@ -13,7 +12,7 @@
   }
 
   .subtitle {
-    font-family: "Yeseva One";
+    font-family: 'Yeseva One';
     font-style: normal;
     font-weight: 400;
     font-size: 22px;
@@ -48,16 +47,17 @@
 
   .section1 {
     height: 30em;
-    background: url("/images/s1_background_mob.jpg"), rgba(0, 0, 0, 0.7);
+    background: url('/images/s1_background_mob.jpg'), rgba(0, 0, 0, 0.7);
     background-size: cover;
     background-repeat: no-repeat;
     justify-content: center;
   }
   .s1_main_box {
-    width: 91%;
-    margin-left: 0;
     justify-content: center;
     align-items: flex-start;
+  }
+  .s1_box {
+    width: 85vw;
   }
   .s1_main_box h1 {
     font-size: 23px;
@@ -82,9 +82,8 @@
   }
 
   /* СЕКЦИЯ 2 */
-
   .section2 {
-    height: 65em;
+    height: 50rem;
   }
   .s2_main_box {
     width: 91%;
@@ -146,12 +145,14 @@
     background-color: #131313;
   }
   .s3_main_box {
-    height: 49em;
+    height: 51rem;
     width: 91%;
+    margin-top: 0;
+    justify-content: flex-start;
   }
 
   .s3_image {
-    margin-top: 8%;
+    margin-top: 5vh;
     height: auto;
   }
   .s3_line {
@@ -188,20 +189,19 @@
     color: #ffffff;
   }
   .s3_form .form:nth-child(2) {
-    margin-top: 15%;
+    margin-top: 2vw;
   }
   .s3_form .button {
-    margin-top: 20%;
-    margin-bottom: -20%;
+    margin-top: 15vh;
   }
   .s3_checkbox {
-    margin-top: -10%;
+    margin-top: -17vh;
   }
 
   /* СЕКЦИЯ 4 */
 
   .section4 {
-    margin-top: 10%;
+    margin-top: 10vh;
     height: 130em;
   }
   .s4_main_box {
@@ -209,7 +209,7 @@
   }
   .s4_box_list {
     flex-direction: column;
-    margin-top: 10%;
+    margin-top: 5vh;
     align-items: center;
     gap: 3em;
   }
@@ -249,7 +249,7 @@
   }
   .s5_main_box {
     width: 91%;
-    margin-top: -65%;
+    margin-top: -16rem;
     display: flex;
     flex-direction: column;
     align-items: center;
