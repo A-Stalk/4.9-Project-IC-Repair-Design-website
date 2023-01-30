@@ -1,7 +1,15 @@
 @media (max-width: 768px) {
+  img {
+    width: auto;
+    max-width: 100%;
+  }
   ._main_box {
     max-width: 768px;
   }
+  /* * {
+    border: 1px solid red;
+    box-sizing: border-box;
+  } */
   header {
     display: flex;
     justify-content: center;
